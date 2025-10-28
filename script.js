@@ -1,0 +1,141 @@
+:root {
+  --accent: #2b7a78;
+  --accent-2: #17b890;
+  --muted: #6b7280;
+  --bg: #f7faf9;
+  --card: #ffffff;
+  --radius: 14px;
+  --shadow: 0 8px 30px rgba(11,22,33,0.08);
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, var(--bg), #eef6f4);
+  color: #0b1220;
+}
+
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+}
+
+.brand-title {
+  font-weight: 700;
+}
+
+.tagline {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.nav-links {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.btn {
+  background: var(--accent);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.ghost {
+  background: transparent;
+  border: 1px solid rgba(11,17,20,0.06);
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 28px;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.hero-card {
+  background: var(--card);
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: var(--shadow);
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 400px;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.lead {
+  color: var(--muted);
+}
+
+.stats {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.stat {
+  background: rgba(23,184,144,0.05);
+  padding: 10px 14px;
+  border-radius: 10px;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+/* Features */
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 40px 0;
+}
+
+.feature {
+  background: var(--card);
